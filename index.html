@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May 2024 Geomagnetic Storms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <nav class="navbar">
+        <div class="navbar-content-container">
+            <div class="nav-logo">GeomagneticStorms</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#monitoring-section">Monitoring and Effects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="title fade-in">May 2024 Geomagnetic Storms</h1>
+            <p class="subtitle">Understand the impact of these powerful solar events</p>
+            <a href="#learn-more" class="cta-btn" id="exploreStorms">Explore the Storms</a>
+        </div>
+    </header>
+
+    <section id="learn-more" class="info-section">
+        <div class="content-container">
+            <h2>What are Geomagnetic Storms?</h2>
+            <p>Geomagnetic storms are disturbances in Earth's magnetosphere caused by interactions between the solar
+                wind—streams of charged particles emitted by the Sun—and Earth's magnetic field. These storms often
+                result from solar eruptions such as solar flares or coronal mass ejections (CMEs), where the Sun ejects
+                large amounts of plasma and magnetic fields into space. When these high-energy particles reach Earth,
+                they can compress the magnetosphere, leading to geomagnetic disturbances.</p>
+            <div class="visual-explanation">
+                <img src="Assets/CME.png" width="560" height="315"
+                    alt="Visual representation of the Sun ejecting plasma towards Earth's magnetosphere">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jnzJaqJdyi4?si=FwzPBJnTv6ILVsTS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                    class="visual-explanation-vid"></iframe>
+            </div>
+            <h2>Carrington Incident of 1859</h2>
+            <p>The severity of a geomagnetic storm is typically classified using the Kp index, which ranges from 0 to 9,
+                with higher values indicating stronger disturbances. Large storms (Kp index 5 or above) have the
+                potential to cause significant disruptions to technology and infrastructure, especially in regions
+                closer to the poles. Moreover, geomagnetic storms have historical precedents of causing global issues,
+                such as the Carrington Event of 1859, which was one of the most powerful geomagnetic storms on record,
+                knocking out telegraph systems and creating auroras visible as far south as the Caribbean.</p>
+            <div class="visual-explanation">
+                <img src="Assets/CarringtonEvent.jpeg" alt="Carrington Event of 1859" width="560" height="315">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PYR6EPlPDPU?si=HaXVbNsC-Tw5u1h4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h2>How do these Storms Affect the Earth?</h2>
+            <p>Geomagnetic storms can disrupt satellite operations, GPS signals, and radio communications by causing
+                fluctuations in the Earth's ionosphere, the layer of the atmosphere that reflects radio waves.
+                Additionally, they can create hazardous conditions for astronauts and affect aviation at high altitudes
+                by increasing exposure to cosmic radiation. In severe cases, geomagnetic storms induce geomagnetically
+                induced currents (GICs), which can flow through power lines and transformers, potentially causing
+                widespread power grid failures and damaging critical infrastructure.</p>
+            <div class="visual-explanation">
+                <img src="Assets/Effects.png" alt="Effects of Geomagnetic Storms on Earth" width="560" height="315">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oHHSSJDJ4oo?si=KetTTfu4VfEKj3vR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="monitoring-section" class="monitoring-section">
+        <div class="navbar-content-container">
+            <h2>Current Solar Activity and Storm Monitoring: </h2>
+            <button onclick="location.href='https://www.swpc.noaa.gov/products/real-time-solar-wind'">Real Time Solar Wind Speeds</button>
+            <button onclick="location.href='https://spaceweather.sansa.org.za/space-weather-information/definitions/noaa-scales/297-geomagnetic-storm-scale'">Geomagnetic Storm Severity</button>
+            <button onclick="location.href='https://sdo.gsfc.nasa.gov/data/'">Sun Solar Data</button>
+            <button onclick="location.href='https://www.nasa.gov/science-research/heliophysics/how-scientists-around-the-world-track-the-solar-cycle/'">How Scientists Around the World Track the Solar Cycle</button>
+            <button onclick="location.href='https://omniweb.gsfc.nasa.gov/'">
+            Paths to Magnetic field, Plasma, Energetic particle data relevant to heliospheric studies</button>
+        </div>
+    </section>
+
+    <section id="effects-section" class="effects-section">
+        <div class="content-container">
+            <h2>How are the May 2024 Storms still affecting You?</h2>
+            <div class="buttons-container">
+                <a href="/Templates/power-grid.html" class="effect-button">Power Grid Failures</a>
+                <a href="/Templates/gps-communication.html" class="effect-button">GPS & Communication Interference</a>
+                <a href="/Templates/auroras.html" class="effect-button">Auroras</a>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">↑</button>
+
+    <footer class="footer" id="footer">
+        <p>&copy; 2024 Venus Amity | All Rights Reserved</p>
+        <a href="#hero">Back to top</a>
+    </footer>
+</body>
+
+</html>
